@@ -11,8 +11,13 @@ spec:
     - name: postgres
       image: postgres:9.4
       env:
+        - name: POSTGRES_USER
+          value: root
         - name: POSTGRES_PASSWORD
           value: root
+        - name: POSTGRES_DB
+          value: testdb
+          
       ports:
       - containerPort: 5432
         
