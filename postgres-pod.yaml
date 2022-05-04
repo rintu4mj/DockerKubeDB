@@ -10,6 +10,8 @@ spec:
     containers:
     - name: postgres
       image: postgres:9.4
+      environment:
+        POSTGRES_PASSWORD: root
       ports:
       - containerPort: 5432
         
